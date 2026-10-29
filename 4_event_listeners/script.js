@@ -15,3 +15,23 @@ cardHeadings.forEach(heading =>{
     heading.style.fontSize='3rem';
 })
 //Event Listeners
+
+// Element.addEventListener("click", function());
+
+const buttonTwo = document.querySelector('.btn-2');
+
+function alertBtn () {
+    alert('This alert is provided by JS');
+}
+
+buttonTwo.addEventListener("click",alertBtn);
+
+//Mouseover
+
+const cardThree = document.querySelector('.card-3');
+
+function changeBgColor(){
+    cardThree.style.backgroundColor="darkkhaki";
+}
+
+document.querySelector('.btn-3').addEventListener("mouseover", changeBgColor);
